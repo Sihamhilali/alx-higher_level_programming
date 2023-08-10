@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 def uppercase(c):
-    if ord(c) >= 65 and ord(c) <= 90:
-        return True
-    else:
-        return False
+    if ord(c) >= ord('a') and ord(c) <= ord('z'):
+        c = chr(ord(c) - 32)
+    return c
